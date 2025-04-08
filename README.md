@@ -1,9 +1,13 @@
-## install the project
-'npm install'
+# Student App
 
-# Run `ng serve -o`
+### How to install
 
-# Gui
+npm install
+
+### How to start
+
+npm start
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.16.
 
