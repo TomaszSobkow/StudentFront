@@ -1,3 +1,8 @@
+## install the project
+'npm install'
+
+# Run `ng serve -o`
+
 # Gui
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.16.
