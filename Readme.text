@@ -1,0 +1,9 @@
+To start this frontend part of my Student Manager Application please generate
+Angular applicatiion and than clone Git repo to this folder.
+After it start a appliaction with forvard command in terminal:
+ng serve -o
+which opens this application in seperate Internet browser window.
+
+
+
+

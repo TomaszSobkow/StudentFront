@@ -1,0 +1,8 @@
+.container {
+  width: 20%;
+  display: table-cell;
+  vertical-align: middle;
+  position: absolute;
+  border: 5px red double;
+
+}

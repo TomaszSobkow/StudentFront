@@ -1,0 +1,90 @@
+<body >
+  <div >
+    <h4 class = " text-center">{{ title }}</h4>
+  </div>
+
+  <form (ngSubmit) = "update()" >
+
+    <div class = "col form-group">
+      <label id="id_label"><b>ID: {{id}} </b></label>
+    </div>
+
+    <div class="row">
+      <div class = " col form-group  mb-3">
+        <label>First Name</label>
+        <input type = "text"  class = "form-control form-control-sm mb-3" name = "firstName" placeholder="First Name"
+          [(ngModel)] = "student.firstName" name = "firstName">
+      </div>
+
+      <div class = " col form-group  mb-3 ">
+        <label>Last Name</label>
+        <input type = "text" class = "form-control form-control-sm mb-3"  name = "LastName" placeholder="Last Name"
+          [(ngModel)] = "student.lastName" name = "LastName">
+      </div>
+
+      <div class = " col form-group  mb-3">
+        <label>Address</label>
+        <input type = "text" class = "form-control form-control-sm mb-3"  name = "address" placeholder="Address"
+           [(ngModel)] = "student.address" name = "address">
+      </div>
+
+      <div class = " col form-group  mb-3 ">
+        <label>Town</label>
+        <input type = "text" class = "form-control form-control-sm mb-3"  name = "town" placeholder="Town"
+          [(ngModel)] = "student.town" name = "town">
+      </div>
+
+        <div class="row">
+          <div class = " col form-group  mb-3">
+            <label>County</label>
+            <input type = "text"  class = "form-control form-control-sm mb-3" name = "county" placeholder="County"
+              [(ngModel)] = "student.county" name = "county">
+          </div>
+
+      <div class = " col form-group  mb-3">
+        <label>Email</label>
+        <input type = "text" class = "form-control form-control-sm mb-3"  name = "emailId" placeholder="Email"
+          [(ngModel)] = "student.email" name = "emailId">
+      </div>
+
+      <div class = " col form-group  mb-3">
+        <label>Phone</label>
+        <input type = "text" class = "form-control form-control-sm mb-3"  name = "phone" placeholder="Phone"
+          [(ngModel)] = "student.phone" name = "phone">
+      </div>
+          <a *ngIf="displayDialog; then display"></a>
+      <ng-template #display>
+        <app-dialog ></app-dialog>
+      </ng-template>
+
+    </div>
+
+   </div>
+    <button class="btn btn-secondary btn-sm"   id="btnadd"  type="button" (click)="update()">Update </button>
+    <button class="btn btn-dark btn-sm"   id="btnadd"  type="button" (click)="cancel()"  style="margin-left: 1%" >Cancel </button>
+    <button class="btn btn-danger btn-sm" id="btnadd" type="button" (click)="deleteStudent(student.id)" style="margin-left: 4%">Delete </button>
+
+  </form>
+
+
+
+
+
+
+
+  <!-- <form>
+      <div class = "form-group">
+          <label>Date of Birth</label>
+          <input type="date" class="form-control" id = "dateOfBirth">
+
+      </div>
+      <div class = "form-group">
+          <label  class="col-sm-3 col-form-label " id = "loadFile">Load FILE</label>
+          <input type="file" >
+      </div>
+  </form> -->
+
+
+
+</body>
+

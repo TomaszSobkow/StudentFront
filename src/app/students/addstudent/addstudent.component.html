@@ -1,0 +1,56 @@
+<body>
+  <div >
+    <h3 class = " text-center">{{ title }}</h3>
+      <form (ngSubmit) = "onSubmit()" >
+
+        <div class="row">
+          <div class = " col form-group  mb-3">
+            <i class="fa fa-user-tie" ></i>
+            <input name="firstname" type = "text"  class = "form-control form-control-sm mb-3 " placeholder="first Name"
+              [(ngModel)] = "student.firstName" name = "firstName">
+          </div>
+
+          <div class = " col form-group  mb-3 ">
+            <i class="fa fa-user" ></i>
+            <input name="lastName type" type ="text" class = "form-control form-control-sm mb-3" placeholder="Last Name"
+                [(ngModel)] = "student.lastName" name = "LastName">
+          </div>
+
+          <div class = " col form-group  mb-3">
+            <i class="fa fa-landmark" ></i>
+            <input   name="login" class="form-control form-control-sm mb-3" placeholder="Address" 
+              [(ngModel)] = "student.address" name = "address">
+          </div>
+
+          <div class = " col form-group  mb-3 ">
+            <i class="fa fa-home" ></i>
+            <input type = "text" class = "form-control form-control-sm mb-3"  name = "town" placeholder="Town"
+              [(ngModel)] = "student.town" name = "town">
+        </div>
+
+        <div class="row">
+          <div class = " col form-group  mb-3">
+            <i class="fa fa-globe" ></i>
+            <input type = "text"  class = "form-control form-control-sm mb-3" name = "county" placeholder="County"
+              [(ngModel)] = "student.county" name = "county">
+          </div>
+
+          <div class = " col form-group  mb-3">
+            <i class="fa fa-envelope" ></i>
+            <input type = "text" class = "form-control form-control-sm mb-3 "  name = "emailId" placeholder="Email"
+              [(ngModel)] = "student.email" name = "emailId">
+          </div>
+
+          <div class = " col form-group  mb-3">
+            <i class="fa fa-phone" ></i>
+            <input type = "text" class = "form-control form-control-sm mb-3 "  name = "phone" placeholder="Phone"
+              [(ngModel)] = "student.phone" name = "phone">
+          </div>
+
+        </div>
+      </div>
+      <button class="btn btn-secondary btn-sm" id = "btnadd"  type="submit" >Add Student</button>
+      <button class="btn btn-dark btn-sm"   id="btnadd"  type="button" (click)="cancel()"  style="margin-left: 3%" >CANCEL </button>
+    </form>
+  </div>
+</body>
