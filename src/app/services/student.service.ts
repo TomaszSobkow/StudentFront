@@ -10,7 +10,7 @@ import { Student } from '../students/student';
 })
 export class StudentService {
 
-   private  url  = "http://localhost:8080/api/students";
+   private  url  = "http://g22o6ljb3cqxnaqq.myfritz.net:8080/api/students";
 
 
   constructor( private httpClient: HttpClient){ }
